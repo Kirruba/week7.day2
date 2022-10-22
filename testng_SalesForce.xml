@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Salesforce">
+
+	<listeners>
+		<listener
+			class-name="week5.day2.DataProvider.RetryFailedTests"></listener>
+	</listeners>
+
+	<parameter name="url" value="https://login.salesforce.com"></parameter>
+	<parameter name="username"
+		value="kirruba.lakshmi@testleaf.com"></parameter>
+	<parameter name="password" value="Abusakshi$263"></parameter>
+
+	<test thread-count="5" name="SalesforceTest" verbose="2">
+		<packages>
+			<package name="week7.day2.salesforcerunner" />
+		</packages>
+	</test> <!-- SalesforceTest -->
+
+</suite> <!-- Salesforce -->
+	
